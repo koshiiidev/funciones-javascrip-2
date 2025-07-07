@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones_Javascript</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Funciones JavaScript</h1>
+
+        <div class="section">
+            <h2>1. Precio de Productos</h2>
+            <p>Esta funcion toma el precio de 3 productos, calcula el subtotal, el impuesto
+                y el total a pagar:</p>
+            <div class="input-group">
+                <input type="number" id="precio1" placeholder="Precio Producto 1">
+                <input type="number" id="precio2" placeholder="Precio Producto 2">
+                <input type="number" id="precio3" placeholder="Precio Producto 3">
+                <button onclick="calcularPrecio()">Calcular Precio</button>
+            </div>
+            <div id="resultado-precios" class="resultado"></div>
+        </div>
+
+        <div class="section">
+            <h2>2. Concatenar Nombre y Apellidos</h2>
+            <p>Esta funcion solicita el nombre y los dos apellidos, para luego 
+                concatenarlos y mostrarlos:</p>
+            </p>
+            <div class="input-group">
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="text" id="apellido1" placeholder="Primer Apellido">
+                <input type="text" id="apellido2" placeholder="Segundo Apellido">
+                <button onclick="concatenarNombre()">Concatenar Nombre</button>
+            </div>
+            <div id="resultado-nombres" class="resultado"></div>
+        </div>
+
+        <div class="section">
+            <h2>Numeros pares o impares</h2>
+            <p>Esta funcion solicita un numero y determina si es par o impar:</p>
+            <div class="input-group">
+                <input type="number" id="numero" placeholder="Ingrese un número">
+                <button onclick="verificarParImpar()">Verificar Par/Impar</button>
+            </div>
+            <div id="resultado-par-impar" class="resultado"></div>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
